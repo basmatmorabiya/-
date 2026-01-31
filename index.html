@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بصمة مربية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #fce4ec; /* Soft pink background like the template */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Limits width on PC so it stays in the center */
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        /* THIS FIXES THE GIANT IMAGE */
+        .profile-container {
+            width: 180px; /* Adjust this to make the image bigger or smaller */
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid white;
+            overflow: hidden; /* Clips the image into a circle */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .profile-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps the face from stretching */
+        }
+
+        h1 {
+            color: #5d4037;
+            font-size: 26px;
+            margin: 10px 0;
+        }
+
+        .subtitle {
+            color: #8d6e63;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* THIS ADDS THE WHITE BUTTONS BACK */
+        .btn {
+            background-color: white;
+            color: #b08d8d;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 15px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .btn i {
+            margin-right: 12px;
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.02);
+            background-color: #fff9fa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-container">
+            <img src="sarra.jpg" alt="Profile">
+        </div>
+        
+        <h1>بصمة مربية</h1>
+
+        <div class="links-list">
+            <a href="https://www.instagram.com/basmat.mourabiya/" class="btn">
+                <i class="fa-brands fa-instagram"></i> INSTAGRAM
+            </a>
+            
+            <a href="https://www.facebook.com/profile.php?id=100085843459167" class="btn">
+                <i class="fa-brands fa-facebook"></i> FACEBOOK
+            </a>
+
+            <a href="https://www.tiktok.com/@basmat.mourabiya" class="btn">
+                <i class="fa-brands fa-tiktok"></i> TIK TOK
+            </a>
+
+            <a href="https://wa.me/21622556119" class="btn">
+                <i class="fa-brands fa-whatsapp"></i> WHATSAPP
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
